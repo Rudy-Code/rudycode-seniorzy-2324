@@ -1,0 +1,23 @@
+@use 'abstracts/colors' as *;
+
+.btn {
+	width: 48%;
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: $bg-gray;
+	color: $white !important;
+	text-align: center;
+	transition: background-color 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $red;
+		color: $white !important;
+	}
+
+	&:focus {
+		outline: none;
+		background-color: $red;
+		color: $white !important;
+	}
+}

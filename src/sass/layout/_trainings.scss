@@ -1,0 +1,18 @@
+@use 'abstracts/colors' as *;
+
+.trainings {
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	&__day {
+		font-size: 2rem;
+		margin-bottom: 0.3em;
+
+		&-hours {
+			color: crimson;
+		}
+	}
+}

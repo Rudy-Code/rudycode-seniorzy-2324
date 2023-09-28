@@ -1,0 +1,81 @@
+@use 'abstracts/colors' as *;
+
+.schedule {
+	padding: 0.5em;
+	text-align: center;
+	// background-color: $bg-gray;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	table {
+		text-align: center;
+	}
+	tr {
+		width: 100%;
+		&:nth-child(odd) {
+			background-color: $white;
+			color: $black;
+		}
+		&:nth-child(even) {
+			background-color: $bg-gray;
+			color: $white;
+		}
+
+		&:first-of-type {
+			background-color: $red;
+			color: $white;
+		}
+	}
+	th,
+	td {
+		padding: 0.5em 0.2em;
+	}
+}
+
+.timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 1em;
+	padding: 0.05em;
+
+	.timer__header {
+		font-size: 2rem;
+		// font-weight: 300;
+		padding: 1em;
+	}
+
+	.timer__container {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.timer__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		// margin: 0 1em;
+		padding: 0.5em;
+		background-color: rgba($red, 0.9);
+		color: #fff;
+		// border-radius: 5px;
+		width: 25%;
+		height: 25%;
+		font-size: 2rem;
+		font-weight: 300;
+		margin-bottom: 1em;
+	}
+
+	.match-now{
+		display: none;
+		background-color: rgba($red, 0.9);
+	}
+}

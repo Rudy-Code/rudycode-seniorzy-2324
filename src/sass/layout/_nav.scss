@@ -1,0 +1,16 @@
+@use 'abstracts/colors' as *;
+
+.nav {
+	position: fixed;
+	left: 0;
+	top: 104px;
+    height: 60px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	padding: 1em;
+	z-index: 999;
+	background-color: $white;
+	color: $black;
+}
