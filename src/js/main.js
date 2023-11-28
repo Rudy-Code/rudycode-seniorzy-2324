@@ -48,14 +48,11 @@ const setTime = () => {
 	minutesCount.textContent = minutes
 	secondsCount.textContent = seconds
 }
-console.error("test");
-
 
 const appUpdate = () => {
 	let indexTime = 0
 	for (let index = 0; index < matchesData.length; index++) {
 		const el = matchesData[index]
-		console.error(el);
 		const currentTime = new Date()
 		const time = new Date(el) - currentTime
 
