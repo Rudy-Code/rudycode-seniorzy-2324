@@ -38,3 +38,27 @@ th {
 .hidden{
 	visibility: hidden;
 }
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1400px;
+	}
+}
