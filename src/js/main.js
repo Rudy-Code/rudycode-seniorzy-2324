@@ -32,9 +32,36 @@ const setTime = () => {
 	const seconds = Math.floor(result / 1000) % 60
 
 	daysCount.textContent = days
+	days == 1 ? (daysText.textContent = 'dzień') : (daysText.textContent = 'dni')
 	hoursCount.textContent = hours
+
+	if (hours == 1) {
+		hoursText.textContent = 'godzina'
+	} else if (hours > 1 && hours < 5) {
+		hoursText.textContent = 'godziny'
+	} else {
+		hoursText.textContent = 'godzin'
+	}
+
 	minutesCount.textContent = minutes
+
+	if (minutes == 1) {
+		minutesText.textContent = 'minuta'
+	} else if (minutes > 1 && minutes < 5) {
+		minutesText.textContent = 'minuty'
+	} else {
+		minutesText.textContent = 'minut'
+	}
+
 	secondsCount.textContent = seconds
+
+	if (seconds == 1) {
+		secondsText.textContent = 'sekunda'
+	} else if (seconds > 1 && seconds < 5) {
+		secondsText.textContent = 'sekundy'
+	} else {
+		secondsText.textContent = 'sekund'
+	}
 }
 
 const appUpdate = () => {
