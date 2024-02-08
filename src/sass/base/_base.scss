@@ -39,26 +39,26 @@ th {
 	visibility: hidden;
 }
 
-.container {
+.team__container {
 	width: 100%;
 	margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
-	.container {
+	.team__container {
 		max-width: 960px;
 	}
 }
 
 @media (min-width: 1280px) {
-	.container {
+	.team__container {
 		max-width: 1200px;
 	}
 }
 
 
 @media (min-width: 1536px) {
-	.container {
+	.team__container {
 		max-width: 1400px;
 	}
 }
