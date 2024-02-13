@@ -17,6 +17,11 @@ const hoursCount = document.querySelector('#hours')
 const minutesCount = document.querySelector('#minutes')
 const secondsCount = document.querySelector('#seconds')
 
+const daysText = document.querySelector('.timer__item-text--days')
+const hoursText = document.querySelector('.timer__item-text--hours')
+const minutesText = document.querySelector('.timer__item-text--minutes')
+const secondsText = document.querySelector('.timer__item-text--seconds')
+
 const matchNow = document.querySelector('.match-now')
 const timerItem = document.querySelectorAll('.timer__item')
 
