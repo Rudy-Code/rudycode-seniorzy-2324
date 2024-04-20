@@ -8,7 +8,7 @@ const matchesData = [
 	'03.23.2024 20:00:00',
 	'04.06.2024 18:00:00',
 	'04.14.2024 15:00:00',
-	'04.20.2024 19:00:00',
+	'04.21.2024 15:00:00',
 ]
 
 const players = document.querySelectorAll('.team__player')
@@ -76,13 +76,13 @@ const appUpdate = () => {
 		const el = matchesData[index]
 		const currentTime = new Date()
 		const time = new Date(el) - currentTime
+		console.log(time)
 
 		if (time <= 0 && time >= -3600000) {
 			timerItem.forEach(el => {
 				el.style.display = 'none'
 			})
 			matchNow.style.display = 'block'
-			console.log('match now')
 			break
 		}
 
@@ -93,6 +93,14 @@ const appUpdate = () => {
 			})
 			matchNow.style.display = 'none'
 			break
+		}
+
+		if (index == matchesData.length - 1) {
+			timerItem.forEach(el => {
+				el.style.display = 'none'
+			})
+			matchNow.style.display = 'block'
+			matchNow.textContent = 'Koniec sezonu'
 		}
 	}
 	userTime = new Date(matchesData[indexTime])
