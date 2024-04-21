@@ -200,3 +200,12 @@ alertBtn.addEventListener('click', () => {
 		alert.style.display = 'none'
 	}, 500)
 })
+
+window.addEventListener('DOMContentLoaded', () => {
+	const preloader = document.querySelector('.preloader')
+	preloader.style.opacity = '0'
+
+	setTimeout(() => {
+		preloader.style.display = 'none'
+	}, 500)
+})
