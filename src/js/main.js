@@ -202,7 +202,7 @@ alertBtn.addEventListener('click', () => {
 	}, 500)
 })
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	const preloader = document.querySelector('.preloader')
 	preloader.style.opacity = '0'
 
