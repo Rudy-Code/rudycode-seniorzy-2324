@@ -26,6 +26,9 @@ const secondsText = document.querySelector('.timer__item-text--seconds')
 const matchNow = document.querySelector('.match-now')
 const timerItem = document.querySelectorAll('.timer__item')
 
+const alert = document.querySelector('.alert')
+const alertBtn = document.querySelector('.alert__btn')
+
 let userTime
 
 const setTime = () => {
@@ -189,4 +192,21 @@ players.forEach(player => {
 		player.querySelector('.back').style.transform = 'rotateY(-180deg)'
 		player.querySelector('.back').style.opacity = '0'
 	})
+})
+
+alertBtn.addEventListener('click', () => {
+	alert.style.opacity = '0'
+
+	setTimeout(() => {
+		alert.style.display = 'none'
+	}, 500)
+})
+
+window.addEventListener('load', () => {
+	const preloader = document.querySelector('.preloader')
+	preloader.style.opacity = '0'
+
+	setTimeout(() => {
+		preloader.style.display = 'none'
+	}, 500)
 })
