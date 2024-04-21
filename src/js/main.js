@@ -79,7 +79,6 @@ const appUpdate = () => {
 		const el = matchesData[index]
 		const currentTime = new Date()
 		const time = new Date(el) - currentTime
-		console.log(time)
 
 		if (time <= 0 && time >= -3600000) {
 			timerItem.forEach(el => {
