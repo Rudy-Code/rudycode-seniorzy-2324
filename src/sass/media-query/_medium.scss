@@ -1,6 +1,12 @@
 @use 'abstracts/colors' as *;
 
 @media (min-width: 768px) {
+	.alert {
+		&__container {
+			flex-direction: row;
+		}
+	}
+
 	.hero {
 		&__text {
 			position: absolute;
@@ -46,11 +52,10 @@
 			transition: scale 0.3s;
 			perspective: 800px;
 
-
 			.back {
 				padding: 2em;
 			}
-	
+
 			.front {
 				padding: 2em;
 			}

@@ -8,7 +8,7 @@
 	bottom: 0;
 	left: 0;
 	z-index: 100;
-	width: 100%;
+	width: 100vw;
 	border-top: 1px solid #7f7f7f95;
 	opacity: 1;
 	transition: opacity 0.5s;
@@ -17,8 +17,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 		margin: 0 auto;
 		max-width: 1240px;
+		text-align: center;
 
 		p {
 			margin: 0;
